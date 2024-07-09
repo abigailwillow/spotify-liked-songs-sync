@@ -6,7 +6,7 @@ from spotipy.oauth2 import SpotifyOAuth
 
 dotenv.load_dotenv()
 
-auth = SpotifyOAuth(scope='user-library-read playlist-modify-private playlist-modify-public')
+auth = SpotifyOAuth(scope='user-library-read playlist-modify-public')
 
 print(f'Authorization URL: {auth.get_authorize_url()}')
 
